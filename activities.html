@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DreamTrip AI — DreamTrip AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo"><span class="dot"></span> DreamTrip AI</div>
+    <div class="navlinks">
+      <a href="index.html">Questions</a>
+      <a href="results.html">Results</a>
+      <a href="itinerary.html">Itinerary</a>
+      <a href="flights.html">Flights</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="activities.html">Activities</a>
+      <a href="account.html">Account</a>
+    </div>
+  </div>
+  
+<section class="hero" style="background-image: var(--gradient), url('https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?q=80&w=2000&auto=format&fit=crop');">
+  <h1>Activities</h1>
+  <p>Featured items prioritize your itinerary picks — then expand to trending tours and experiences.</p>
+</section>
+<div class="container">
+  <div id="acts" class="grid grid-3"></div>
+</div>
+
+  <script src="app.js"></script>
+  <script>
+(function(){
+  const photos = [
+    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop'
+  ];
+  const items = [
+    {name:'Private lagoon cruise', price:120, img:photos[0]},
+    {name:'Spa ritual & massage', price:95, img:photos[1]},
+    {name:'Snorkel coral gardens', price:80, img:photos[2]},
+    {name:'Sunset catamaran', price:140, img:photos[0]},
+    {name:'Cooking class', price:75, img:photos[1]},
+    {name:'Hike panoramic ridge', price:60, img:photos[2]}
+  ];
+  const grid = document.getElementById('acts');
+  grid.innerHTML = items.map(a=>`
+    <div class="card">
+      <img src="${a.img}" style="width:100%;height:180px;object-fit:cover" alt="activity">
+      <div class="card-body">
+        <div class="flex" style="justify-content:space-between">
+          <strong>${a.name}</strong>
+          <span class="pill">$${a.price}</span>
+        </div>
+        <button style="margin-top:10px">Add to itinerary</button>
+      </div>
+    </div>
+  `).join('');
+})();
+</script>
+</body>
+</html>

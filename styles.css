@@ -1,0 +1,62 @@
+
+:root{
+  --bg:#ffffff;
+  --ink:#0e2431;
+  --muted:#58727f;
+  --brand:#00c2c7; /* tropical teal */
+  --brand-2:#ff6b6b; /* coral */
+  --brand-3:#ffd166; /* sun */
+  --card:#ffffff;
+  --shadow:0 10px 30px rgba(0,0,0,0.08);
+  --radius:18px;
+  --gradient: radial-gradient(1200px 600px at 100% -10%, rgba(0,194,199,0.12), transparent 60%),
+              radial-gradient(1000px 500px at -10% 110%, rgba(255,107,107,0.10), transparent 60%);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;color:var(--ink);background:var(--bg);}
+.hero{
+  background-image: var(--gradient), url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=2000&auto=format&fit=crop');
+  background-size: cover; background-position:center;
+  color:#fff; padding: 84px 24px; text-align:center;
+}
+.hero h1{font-size: clamp(32px, 6vw, 56px); margin:0 0 12px;}
+.hero p{margin:0 auto; max-width:900px; font-size: clamp(16px, 2.2vw, 20px);opacity:.95}
+.navbar{position:sticky;top:0;z-index:30;background:rgba(255,255,255,0.7);backdrop-filter:saturate(180%) blur(10px);display:flex;gap:16px;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid rgba(0,0,0,0.06)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+.logo .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 3px 10px rgba(0,194,199,.5)}
+.navlinks a{color:var(--ink);text-decoration:none;margin:0 10px;font-weight:600;opacity:.85}
+.container{max-width:1200px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid rgba(0,0,0,.06);box-shadow:var(--shadow);border-radius:var(--radius);overflow:hidden}
+.card-header{padding:18px 20px;border-bottom:1px solid rgba(0,0,0,.06);display:flex;align-items:center;justify-content:space-between}
+.card-body{padding:20px}
+button, .btn{
+  appearance:none;border:none;border-radius:12px;padding:12px 18px;font-weight:700;cursor:pointer;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; box-shadow:0 10px 20px rgba(0,194,199,.25);
+}
+.btn-secondary{background:linear-gradient(135deg,#f1f5f9,#e2e8f0);color:#111;box-shadow:none;border:1px solid #e5e7eb}
+.grid{display:grid;gap:18px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:960px){.grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+
+.input, select{
+  width:100%;padding:14px 14px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;outline:none;
+}
+.field{display:grid;gap:8px}
+.kicker{display:inline-block;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-size:12px}
+.help{color:var(--muted);font-size:13px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,194,199,.1);color:#026b6e;padding:6px 10px;border-radius:999px;font-weight:700}
+.city-card{position:relative;min-height:260px;background:#000}
+.city-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(1.1)}
+.city-card .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.55));}
+.city-card .meta{position:absolute;bottom:0;left:0;right:0;padding:16px;color:#fff}
+.meta .title{font-size:20px;font-weight:800}
+.meta .subtitle{opacity:.9;font-size:13px}
+.score{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.9);color:#111;padding:8px 10px;border-radius:999px;font-weight:800;box-shadow:0 6px 14px rgba(0,0,0,.18)}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.92);padding:6px 10px;border-radius:999px;color:#111;font-weight:700}
+.flex{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.mini-logos img{width:22px;height:22px;border-radius:6px;filter:saturate(1.2);}
+.footer{padding:40px 24px;color:#335;display:grid;gap:12px;place-items:center;border-top:1px solid rgba(0,0,0,.08)}
+.footer .brand{font-weight:800}

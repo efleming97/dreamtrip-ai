@@ -1,0 +1,1362 @@
+[
+  {
+    "city": "Denpasar (Bali)",
+    "country": "Indonesia",
+    "lat": -8.6705,
+    "lon": 115.2126,
+    "population": 914000,
+    "tags": [
+      "gateway",
+      "culture",
+      "island",
+      "beach"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Ubud (Bali)",
+    "country": "Indonesia",
+    "lat": -8.5069,
+    "lon": 115.2625,
+    "population": 112000,
+    "tags": [
+      "culture",
+      "wellness",
+      "nature",
+      "luxury"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Nusa Dua (Bali)",
+    "country": "Indonesia",
+    "lat": -8.8007,
+    "lon": 115.23,
+    "population": 45000,
+    "tags": [
+      "luxury",
+      "resort",
+      "beach",
+      "family"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Seminyak (Bali)",
+    "country": "Indonesia",
+    "lat": -8.6903,
+    "lon": 115.1682,
+    "population": 61000,
+    "tags": [
+      "nightlife",
+      "beach",
+      "dining",
+      "luxury"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Lombok",
+    "country": "Indonesia",
+    "lat": -8.65,
+    "lon": 116.3249,
+    "population": 3200000,
+    "tags": [
+      "island",
+      "beach",
+      "trekking",
+      "nature"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Gili Trawangan",
+    "country": "Indonesia",
+    "lat": -8.351,
+    "lon": 116.04,
+    "population": 2000,
+    "tags": [
+      "island",
+      "snorkeling",
+      "nightlife",
+      "beach"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Langkawi",
+    "country": "Malaysia",
+    "lat": 6.35,
+    "lon": 99.8,
+    "population": 107000,
+    "tags": [
+      "island",
+      "luxury",
+      "nature",
+      "beach"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "George Town (Penang)",
+    "country": "Malaysia",
+    "lat": 5.4141,
+    "lon": 100.3288,
+    "population": 708000,
+    "tags": [
+      "culture",
+      "food",
+      "heritage",
+      "urban"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Phuket",
+    "country": "Thailand",
+    "lat": 7.8804,
+    "lon": 98.3923,
+    "population": 420000,
+    "tags": [
+      "island",
+      "beach",
+      "nightlife",
+      "resort"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Krabi",
+    "country": "Thailand",
+    "lat": 8.0863,
+    "lon": 98.9063,
+    "population": 55000,
+    "tags": [
+      "beach",
+      "islands",
+      "nature",
+      "cliffs"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "lat": 9.512,
+    "lon": 99.994,
+    "population": 63000,
+    "tags": [
+      "island",
+      "luxury",
+      "romantic",
+      "beach"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Koh Phi Phi",
+    "country": "Thailand",
+    "lat": 7.7407,
+    "lon": 98.7784,
+    "population": 3000,
+    "tags": [
+      "island",
+      "diving",
+      "beach",
+      "scenic"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "El Nido (Palawan)",
+    "country": "Philippines",
+    "lat": 11.1797,
+    "lon": 119.3916,
+    "population": 50000,
+    "tags": [
+      "island",
+      "lagoon",
+      "scenic",
+      "diving"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Coron (Palawan)",
+    "country": "Philippines",
+    "lat": 12.0,
+    "lon": 120.2,
+    "population": 52000,
+    "tags": [
+      "diving",
+      "lagoons",
+      "wrecks",
+      "island"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Cebu",
+    "country": "Philippines",
+    "lat": 10.3157,
+    "lon": 123.8854,
+    "population": 964000,
+    "tags": [
+      "gateway",
+      "beach",
+      "culture",
+      "food"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Boracay",
+    "country": "Philippines",
+    "lat": 11.9674,
+    "lon": 121.9248,
+    "population": 32000,
+    "tags": [
+      "island",
+      "beach",
+      "luxury",
+      "nightlife"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Siargao",
+    "country": "Philippines",
+    "lat": 9.8487,
+    "lon": 126.0456,
+    "population": 110000,
+    "tags": [
+      "surfing",
+      "island",
+      "nature",
+      "relaxation"
+    ],
+    "region": "Asia",
+    "climate": "tropical",
+    "continent": "Asia"
+  },
+  {
+    "city": "Gustavia (St. Barts)",
+    "country": "Saint Barthélemy",
+    "lat": 17.8962,
+    "lon": -62.8522,
+    "population": 9900,
+    "tags": [
+      "luxury",
+      "romantic",
+      "yachting",
+      "beach"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Marigot (St. Martin)",
+    "country": "Saint Martin",
+    "lat": 18.0706,
+    "lon": -63.0832,
+    "population": 36500,
+    "tags": [
+      "beach",
+      "shopping",
+      "dining",
+      "island"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Philipsburg (Sint Maarten)",
+    "country": "Sint Maarten",
+    "lat": 18.026,
+    "lon": -63.045,
+    "population": 18000,
+    "tags": [
+      "beach",
+      "nightlife",
+      "shopping"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "The Valley (Anguilla)",
+    "country": "Anguilla",
+    "lat": 18.2148,
+    "lon": -63.057,
+    "population": 14000,
+    "tags": [
+      "beach",
+      "luxury",
+      "relaxation"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "St. John’s",
+    "country": "Antigua and Barbuda",
+    "lat": 17.1274,
+    "lon": -61.8468,
+    "population": 22000,
+    "tags": [
+      "beach",
+      "sailing",
+      "resort",
+      "culture"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "English Harbour",
+    "country": "Antigua and Barbuda",
+    "lat": 17.0094,
+    "lon": -61.7708,
+    "population": 1200,
+    "tags": [
+      "yachting",
+      "heritage",
+      "beach",
+      "luxury"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Soufrière",
+    "country": "Saint Lucia",
+    "lat": 13.856,
+    "lon": -61.0569,
+    "population": 7900,
+    "tags": [
+      "romantic",
+      "luxury",
+      "volcanic",
+      "nature"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Rodney Bay",
+    "country": "Saint Lucia",
+    "lat": 14.07,
+    "lon": -60.95,
+    "population": 11000,
+    "tags": [
+      "beach",
+      "resort",
+      "nightlife"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Bridgetown",
+    "country": "Barbados",
+    "lat": 13.0975,
+    "lon": -59.6167,
+    "population": 110000,
+    "tags": [
+      "urban",
+      "culture",
+      "beach"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Holetown",
+    "country": "Barbados",
+    "lat": 13.1835,
+    "lon": -59.6388,
+    "population": 1500,
+    "tags": [
+      "luxury",
+      "beach",
+      "dining"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "St. George’s",
+    "country": "Grenada",
+    "lat": 12.0561,
+    "lon": -61.7488,
+    "population": 39000,
+    "tags": [
+      "beach",
+      "diving",
+      "spice",
+      "harbor"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Kingstown",
+    "country": "Saint Vincent and the Grenadines",
+    "lat": 13.16,
+    "lon": -61.2248,
+    "population": 16700,
+    "tags": [
+      "harbor",
+      "culture"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Bequia (Port Elizabeth)",
+    "country": "Saint Vincent and the Grenadines",
+    "lat": 13.0116,
+    "lon": -61.235,
+    "population": 5000,
+    "tags": [
+      "yachting",
+      "beach",
+      "relaxation"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Mustique",
+    "country": "Saint Vincent and the Grenadines",
+    "lat": 12.888,
+    "lon": -61.185,
+    "population": 500,
+    "tags": [
+      "private",
+      "luxury",
+      "island"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Providenciales",
+    "country": "Turks and Caicos Islands",
+    "lat": 21.7736,
+    "lon": -72.275,
+    "population": 31000,
+    "tags": [
+      "luxury",
+      "beach",
+      "diving",
+      "relaxation"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Grand Turk (Cockburn Town)",
+    "country": "Turks and Caicos Islands",
+    "lat": 21.46,
+    "lon": -71.1419,
+    "population": 4500,
+    "tags": [
+      "heritage",
+      "beach",
+      "diving"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Nassau",
+    "country": "Bahamas",
+    "lat": 25.0443,
+    "lon": -77.3504,
+    "population": 274400,
+    "tags": [
+      "urban",
+      "beach",
+      "resort",
+      "cruise"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "George Town (Exumas)",
+    "country": "Bahamas",
+    "lat": 23.5172,
+    "lon": -75.7697,
+    "population": 7500,
+    "tags": [
+      "yachting",
+      "beach",
+      "luxury"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Harbour Island (Dunmore Town)",
+    "country": "Bahamas",
+    "lat": 25.5,
+    "lon": -76.6333,
+    "population": 2000,
+    "tags": [
+      "pink sand",
+      "luxury",
+      "romantic"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Montego Bay",
+    "country": "Jamaica",
+    "lat": 18.4712,
+    "lon": -77.9188,
+    "population": 110000,
+    "tags": [
+      "resort",
+      "beach",
+      "nightlife"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Negril",
+    "country": "Jamaica",
+    "lat": 18.2683,
+    "lon": -78.347,
+    "population": 7000,
+    "tags": [
+      "beach",
+      "sunset",
+      "relaxation"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Ocho Rios",
+    "country": "Jamaica",
+    "lat": 18.4074,
+    "lon": -77.1031,
+    "population": 16500,
+    "tags": [
+      "waterfalls",
+      "adventure",
+      "beach"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Punta Cana",
+    "country": "Dominican Republic",
+    "lat": 18.5601,
+    "lon": -68.3725,
+    "population": 43000,
+    "tags": [
+      "resort",
+      "beach",
+      "golf"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Samaná",
+    "country": "Dominican Republic",
+    "lat": 19.2056,
+    "lon": -69.3369,
+    "population": 10800,
+    "tags": [
+      "whales",
+      "beach",
+      "nature"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Santo Domingo",
+    "country": "Dominican Republic",
+    "lat": 18.4861,
+    "lon": -69.9312,
+    "population": 965000,
+    "tags": [
+      "urban",
+      "culture",
+      "heritage"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "San Juan",
+    "country": "Puerto Rico",
+    "lat": 18.4655,
+    "lon": -66.1057,
+    "population": 342000,
+    "tags": [
+      "heritage",
+      "urban",
+      "beach",
+      "food"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Vieques (Isabel Segunda)",
+    "country": "Puerto Rico",
+    "lat": 18.1342,
+    "lon": -65.4413,
+    "population": 9000,
+    "tags": [
+      "biobay",
+      "island",
+      "beach",
+      "romantic"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Culebra (Dewey)",
+    "country": "Puerto Rico",
+    "lat": 18.3033,
+    "lon": -65.3,
+    "population": 1800,
+    "tags": [
+      "beach",
+      "snorkeling",
+      "secluded"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Hamilton",
+    "country": "Bermuda",
+    "lat": 32.2949,
+    "lon": -64.7814,
+    "population": 10000,
+    "tags": [
+      "urban",
+      "harbor",
+      "island",
+      "luxury"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "George Town (Grand Cayman)",
+    "country": "Cayman Islands",
+    "lat": 19.2869,
+    "lon": -81.3671,
+    "population": 34200,
+    "tags": [
+      "luxury",
+      "diving",
+      "finance",
+      "beach"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Seven Mile Beach",
+    "country": "Cayman Islands",
+    "lat": 19.3333,
+    "lon": -81.3833,
+    "population": 7000,
+    "tags": [
+      "beach",
+      "luxury",
+      "resort"
+    ],
+    "climate": "tropical",
+    "region": "Caribbean",
+    "continent": "North America"
+  },
+  {
+    "city": "Santorini (Thira)",
+    "country": "Greece",
+    "lat": 36.3932,
+    "lon": 25.4615,
+    "population": 15500,
+    "tags": [
+      "island",
+      "romantic",
+      "luxury",
+      "scenic",
+      "sunset"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Mykonos",
+    "country": "Greece",
+    "lat": 37.4467,
+    "lon": 25.3289,
+    "population": 10400,
+    "tags": [
+      "island",
+      "nightlife",
+      "beach",
+      "luxury"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Heraklion (Crete)",
+    "country": "Greece",
+    "lat": 35.3387,
+    "lon": 25.1442,
+    "population": 173000,
+    "tags": [
+      "island",
+      "gateway",
+      "history",
+      "beach"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Chania (Crete)",
+    "country": "Greece",
+    "lat": 35.5138,
+    "lon": 24.018,
+    "population": 108000,
+    "tags": [
+      "island",
+      "historic",
+      "beach",
+      "scenic"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Rhodes (Rodos)",
+    "country": "Greece",
+    "lat": 36.4349,
+    "lon": 28.2176,
+    "population": 115000,
+    "tags": [
+      "island",
+      "history",
+      "beach",
+      "resort"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Corfu (Kerkyra)",
+    "country": "Greece",
+    "lat": 39.6243,
+    "lon": 19.9217,
+    "population": 39000,
+    "tags": [
+      "island",
+      "green",
+      "beach",
+      "heritage"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Naxos",
+    "country": "Greece",
+    "lat": 37.1056,
+    "lon": 25.375,
+    "population": 19000,
+    "tags": [
+      "island",
+      "beach",
+      "culture",
+      "family"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Paros",
+    "country": "Greece",
+    "lat": 37.085,
+    "lon": 25.15,
+    "population": 12500,
+    "tags": [
+      "island",
+      "beach",
+      "chic",
+      "windsurf"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Capri",
+    "country": "Italy",
+    "lat": 40.5532,
+    "lon": 14.2222,
+    "population": 12700,
+    "tags": [
+      "island",
+      "luxury",
+      "romantic",
+      "scenic"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Positano (Amalfi)",
+    "country": "Italy",
+    "lat": 40.628,
+    "lon": 14.4845,
+    "population": 3900,
+    "tags": [
+      "coast",
+      "romantic",
+      "luxury",
+      "scenic"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Amalfi",
+    "country": "Italy",
+    "lat": 40.634,
+    "lon": 14.6029,
+    "population": 5100,
+    "tags": [
+      "coast",
+      "history",
+      "romantic",
+      "scenic"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Taormina (Sicily)",
+    "country": "Italy",
+    "lat": 37.853,
+    "lon": 15.287,
+    "population": 11000,
+    "tags": [
+      "island",
+      "historic",
+      "scenic",
+      "luxury"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Palermo (Sicily)",
+    "country": "Italy",
+    "lat": 38.1157,
+    "lon": 13.3615,
+    "population": 663000,
+    "tags": [
+      "urban",
+      "history",
+      "food",
+      "gateway"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Cagliari (Sardinia)",
+    "country": "Italy",
+    "lat": 39.2238,
+    "lon": 9.1217,
+    "population": 154000,
+    "tags": [
+      "island",
+      "urban",
+      "beach"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Olbia (Sardinia)",
+    "country": "Italy",
+    "lat": 40.9236,
+    "lon": 9.4969,
+    "population": 61000,
+    "tags": [
+      "island",
+      "gateway",
+      "beach"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Porto Cervo (Costa Smeralda)",
+    "country": "Italy",
+    "lat": 41.1366,
+    "lon": 9.5316,
+    "population": 2000,
+    "tags": [
+      "luxury",
+      "yachting",
+      "beach"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Ibiza Town (Eivissa)",
+    "country": "Spain",
+    "lat": 38.9067,
+    "lon": 1.4206,
+    "population": 50000,
+    "tags": [
+      "island",
+      "nightlife",
+      "beach",
+      "luxury"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Sant Antoni de Portmany (Ibiza)",
+    "country": "Spain",
+    "lat": 38.9807,
+    "lon": 1.3036,
+    "population": 25000,
+    "tags": [
+      "nightlife",
+      "sunset",
+      "beach"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Palma de Mallorca",
+    "country": "Spain",
+    "lat": 39.5696,
+    "lon": 2.6502,
+    "population": 416000,
+    "tags": [
+      "island",
+      "urban",
+      "heritage",
+      "beach"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Alcúdia (Mallorca)",
+    "country": "Spain",
+    "lat": 39.8532,
+    "lon": 3.1217,
+    "population": 20000,
+    "tags": [
+      "beach",
+      "family",
+      "historic"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Ciutadella (Menorca)",
+    "country": "Spain",
+    "lat": 40.0014,
+    "lon": 3.8415,
+    "population": 29000,
+    "tags": [
+      "island",
+      "heritage",
+      "beach"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Formentera",
+    "country": "Spain",
+    "lat": 38.6979,
+    "lon": 1.4596,
+    "population": 12000,
+    "tags": [
+      "island",
+      "beach",
+      "secluded",
+      "chic"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Hvar Town",
+    "country": "Croatia",
+    "lat": 43.1729,
+    "lon": 16.4424,
+    "population": 13500,
+    "tags": [
+      "island",
+      "nightlife",
+      "yachting",
+      "beach"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Split",
+    "country": "Croatia",
+    "lat": 43.5081,
+    "lon": 16.4402,
+    "population": 178000,
+    "tags": [
+      "urban",
+      "heritage",
+      "beach",
+      "gateway"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Dubrovnik",
+    "country": "Croatia",
+    "lat": 42.6507,
+    "lon": 18.0944,
+    "population": 42000,
+    "tags": [
+      "heritage",
+      "scenic",
+      "luxury",
+      "coast"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Nice",
+    "country": "France",
+    "lat": 43.7102,
+    "lon": 7.262,
+    "population": 340000,
+    "tags": [
+      "urban",
+      "coast",
+      "culture",
+      "resort"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Cannes",
+    "country": "France",
+    "lat": 43.5528,
+    "lon": 7.0174,
+    "population": 74000,
+    "tags": [
+      "luxury",
+      "film",
+      "beach",
+      "yachting"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Saint-Tropez",
+    "country": "France",
+    "lat": 43.2672,
+    "lon": 6.64,
+    "population": 4400,
+    "tags": [
+      "luxury",
+      "yachting",
+      "beach",
+      "nightlife"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Ajaccio (Corsica)",
+    "country": "France",
+    "lat": 41.9192,
+    "lon": 8.7386,
+    "population": 71000,
+    "tags": [
+      "island",
+      "heritage",
+      "beach"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Bonifacio (Corsica)",
+    "country": "France",
+    "lat": 41.3879,
+    "lon": 9.159,
+    "population": 3000,
+    "tags": [
+      "island",
+      "cliffs",
+      "scenic"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Bodrum",
+    "country": "Türkiye",
+    "lat": 37.0344,
+    "lon": 27.4305,
+    "population": 181000,
+    "tags": [
+      "coast",
+      "yachting",
+      "nightlife",
+      "luxury"
+    ],
+    "continent": "Asia",
+    "climate": "warm",
+    "region": "Mediterranean"
+  },
+  {
+    "city": "Antalya",
+    "country": "Türkiye",
+    "lat": 36.8969,
+    "lon": 30.7133,
+    "population": 1200000,
+    "tags": [
+      "resort",
+      "beach",
+      "history"
+    ],
+    "continent": "Asia",
+    "climate": "warm",
+    "region": "Mediterranean"
+  },
+  {
+    "city": "Marmaris",
+    "country": "Türkiye",
+    "lat": 36.8525,
+    "lon": 28.2742,
+    "population": 90000,
+    "tags": [
+      "coast",
+      "yachting",
+      "beach"
+    ],
+    "continent": "Asia",
+    "climate": "warm",
+    "region": "Mediterranean"
+  },
+  {
+    "city": "Paphos",
+    "country": "Cyprus",
+    "lat": 34.772,
+    "lon": 32.4297,
+    "population": 36000,
+    "tags": [
+      "beach",
+      "heritage",
+      "resort"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Limassol",
+    "country": "Cyprus",
+    "lat": 34.7071,
+    "lon": 33.0226,
+    "population": 183000,
+    "tags": [
+      "urban",
+      "beach",
+      "luxury",
+      "marina"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Valletta",
+    "country": "Malta",
+    "lat": 35.8989,
+    "lon": 14.5146,
+    "population": 6000,
+    "tags": [
+      "heritage",
+      "harbor",
+      "capital"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Gozo (Victoria)",
+    "country": "Malta",
+    "lat": 36.044,
+    "lon": 14.239,
+    "population": 7000,
+    "tags": [
+      "island",
+      "scenic",
+      "diving"
+    ],
+    "climate": "warm",
+    "region": "Mediterranean",
+    "continent": "Europe"
+  },
+  {
+    "city": "Funchal (Madeira)",
+    "country": "Portugal",
+    "lat": 32.6669,
+    "lon": -16.9241,
+    "population": 111000,
+    "tags": [
+      "island",
+      "nature",
+      "levadas",
+      "scenic"
+    ],
+    "region": "Atlantic",
+    "climate": "warm",
+    "continent": "Europe"
+  },
+  {
+    "city": "Ponta Delgada (Azores)",
+    "country": "Portugal",
+    "lat": 37.7412,
+    "lon": -25.6756,
+    "population": 68000,
+    "tags": [
+      "island",
+      "nature",
+      "whales",
+      "volcanic"
+    ],
+    "region": "Atlantic",
+    "climate": "warm",
+    "continent": "Europe"
+  }
+]

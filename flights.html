@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DreamTrip AI — DreamTrip AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo"><span class="dot"></span> DreamTrip AI</div>
+    <div class="navlinks">
+      <a href="index.html">Questions</a>
+      <a href="results.html">Results</a>
+      <a href="itinerary.html">Itinerary</a>
+      <a href="flights.html">Flights</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="activities.html">Activities</a>
+      <a href="account.html">Account</a>
+    </div>
+  </div>
+  
+<section class="hero" style="background-image: var(--gradient), url('https://images.unsplash.com/photo-1518546305927-5a555bb7020e?q=80&w=2000&auto=format&fit=crop');">
+  <h1>Flight options (prototype)</h1>
+  <p>Live pricing will come from Skyscanner API — for now we show “from $X”, duration, and carrier logos as placeholders.</p>
+</section>
+<div class="container">
+  <div id="flightList" class="grid grid-2"></div>
+</div>
+
+  <script src="app.js"></script>
+  <script>
+(async function(){
+  const prefs = JSON.parse(sessionStorage.getItem('prefs')||'{}');
+  const origin = JSON.parse(sessionStorage.getItem('origin')||'null');
+  const flights = Array.from({length:6}).map((_,i)=>{
+    const price = 300 + Math.round(Math.random()*1500);
+    const dur = 5 + Math.round(Math.random()*12);
+    const stops = ['Nonstop','1 stop','2 stops'][Math.floor(Math.random()*3)];
+    return {route:`${origin?origin.code:'XXX'} → DreamCity ${i+1}`, price, dur, stops};
+  });
+  const list = document.getElementById('flightList');
+  list.innerHTML = flights.map(f=>`
+    <div class="card">
+      <div class="card-header">
+        <strong>${f.route}</strong>
+        <span class="pill">From $${f.price}</span>
+      </div>
+      <div class="card-body">
+        <div class="flex">
+          <span class="pill">Duration ~ ${f.dur}h</span>
+          <span class="pill">${f.stops}</span>
+          <span class="mini-logos">${airlineLogoStrip()}</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+})();
+</script>
+</body>
+</html>

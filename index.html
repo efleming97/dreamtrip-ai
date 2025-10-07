@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DreamTrip AI — DreamTrip AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo"><span class="dot"></span> DreamTrip AI</div>
+    <div class="navlinks">
+      <a href="index.html">Questions</a>
+      <a href="results.html">Results</a>
+      <a href="itinerary.html">Itinerary</a>
+      <a href="flights.html">Flights</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="activities.html">Activities</a>
+      <a href="account.html">Account</a>
+    </div>
+  </div>
+  
+<section class="hero">
+  <h1>Find your dream tropical escape</h1>
+  <p>Answer 10 quick questions and we’ll match you with the perfect destinations based on your vibe, budget, and trip length — then build a personalized itinerary with real photos.</p>
+</section>
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <div class="kicker">Step 1</div>
+        <h3 style="margin:6px 0 0">Tell us about your trip</h3>
+      </div>
+      <span class="badge">New • Tropical Theme</span>
+    </div>
+    <div class="card-body">
+      <div class="grid grid-2">
+        <div class="field">
+          <label>Do you already know your destination?</label>
+          <select id="knownDest" class="input">
+            <option value="">No, help me decide</option>
+            <option value="yes">Yes — I’ll enter it</option>
+          </select>
+          <input id="knownDestName" class="input" placeholder="Type a city (e.g., Bora Bora)" style="display:none;">
+        </div>
+        <div class="field">
+          <label>Origin airport</label>
+          <select id="origin" class="input">
+            <option value="">Select your nearest hub</option>
+            <option value="AKL">Auckland (AKL)</option>
+            <option value="SYD">Sydney (SYD)</option>
+            <option value="LAX">Los Angeles (LAX)</option>
+            <option value="JFK">New York (JFK)</option>
+            <option value="LHR">London (LHR)</option>
+            <option value="SIN">Singapore (SIN)</option>
+          </select>
+          <div class="help">We’ll use this to estimate flight time.</div>
+        </div>
+        <div class="field">
+          <label>Max flight time (one way)</label>
+          <select id="maxHours" class="input">
+            <option value="6">Up to 6 hours</option>
+            <option value="9" selected>Up to 9 hours</option>
+            <option value="12">Up to 12 hours</option>
+            <option value="16">Up to 16 hours</option>
+            <option value="100">Any length</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Budget level</label>
+          <select id="budget" class="input">
+            <option>Value</option>
+            <option selected>Comfort</option>
+            <option>Premium</option>
+            <option>Ultra‑Luxury</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Trip duration</label>
+          <select id="duration" class="input">
+            <option>Weekend (2–3 nights)</option>
+            <option>Short break (4–6 nights)</option>
+            <option selected>One week (7–9 nights)</option>
+            <option>Two weeks+</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Preferred continent</label>
+          <select id="continent" class="input">
+            <option value="">Any</option>
+            <option>Africa</option>
+            <option>Asia</option>
+            <option>Europe</option>
+            <option>North America</option>
+            <option>Oceania</option>
+            <option>South America</option>
+            <option>Mediterranean</option>
+            <option>Caribbean</option>
+            <option>Atlantic</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Travel vibe</label>
+          <select id="vibe" class="input">
+            <option>beach</option>
+            <option>island</option>
+            <option>romantic</option>
+            <option>nightlife</option>
+            <option>adventure</option>
+            <option>diving</option>
+            <option>luxury</option>
+            <option>culture</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Climate preference</label>
+          <select id="climate" class="input">
+            <option value="">Any</option>
+            <option>tropical</option>
+            <option>warm</option>
+            <option>temperate</option>
+            <option>mild</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Pace</label>
+          <select id="pace" class="input">
+            <option>Chill</option>
+            <option selected>Balanced</option>
+            <option>Fast‑paced</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Must‑have</label>
+          <select id="must" class="input">
+            <option>Beautiful beaches</option>
+            <option>Great food</option>
+            <option>Epic views</option>
+            <option>Family friendly</option>
+            <option>Wellness & spas</option>
+            <option>Nightlife</option>
+          </select>
+        </div>
+      </div>
+      <div style="display:flex;gap:14px;margin-top:18px">
+        <button id="startBtn">See my matches</button>
+        <a class="btn btn-secondary" href="results.html">Skip to results</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="app.js"></script>
+  <script>
+const knownDest = document.getElementById('knownDest');
+const knownDestName = document.getElementById('knownDestName');
+knownDest.addEventListener('change',()=>{
+  knownDestName.style.display = knownDest.value==='yes' ? 'block' : 'none';
+});
+
+document.getElementById('startBtn').addEventListener('click', async ()=>{
+  const prefs = {
+    budget: document.getElementById('budget').value,
+    duration: document.getElementById('duration').value,
+    continent: document.getElementById('continent').value || null,
+    vibe: document.getElementById('vibe').value || null,
+    climate: document.getElementById('climate').value || null,
+    pace: document.getElementById('pace').value,
+    must: document.getElementById('must').value,
+    knownDest: knownDest.value==='yes' ? (knownDestName.value||null) : null,
+    maxHours: parseFloat(document.getElementById('maxHours').value||'100')
+  };
+  const originCode = document.getElementById('origin').value;
+  const origin = demoAirports.find(a=>a.code===originCode) || null;
+  savePrefs(prefs); saveOrigin(origin);
+  window.location.href = 'results.html';
+});
+</script>
+</body>
+</html>

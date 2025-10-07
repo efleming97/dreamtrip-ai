@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DreamTrip AI — DreamTrip AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo"><span class="dot"></span> DreamTrip AI</div>
+    <div class="navlinks">
+      <a href="index.html">Questions</a>
+      <a href="results.html">Results</a>
+      <a href="itinerary.html">Itinerary</a>
+      <a href="flights.html">Flights</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="activities.html">Activities</a>
+      <a href="account.html">Account</a>
+    </div>
+  </div>
+  
+<section class="hero" style="background-image: var(--gradient), url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2000&auto=format&fit=crop');">
+  <h1>Your top tropical matches</h1>
+  <p>Handpicked by our AI using your preferences — complete with estimated flight times from your origin and live‑pricing placeholders.</p>
+</section>
+<div class="container">
+  <div class="flex" id="summary"></div>
+  <div class="grid grid-3" id="resultsGrid" style="margin-top:14px"></div>
+</div>
+<div class="footer">
+  <div class="brand">DreamTrip AI</div>
+  <div>Tip: Click any destination to see a personalized itinerary.</div>
+</div>
+
+  <script src="app.js"></script>
+  <script>
+(async function(){
+  const cities = await loadCities();
+  const prefs = JSON.parse(sessionStorage.getItem('prefs')||'{}');
+  const origin = JSON.parse(sessionStorage.getItem('origin')||'null');
+  const summary = document.getElementById('summary');
+  summary.innerHTML = [
+    `<span class="pill">Origin: ${origin?origin.code+' '+origin.name:'Not set'}</span>`,
+    `<span class="pill">Max flight: ${prefs.maxHours||'Any'}h</span>`,
+    prefs.continent ? `<span class="pill">Continent: ${prefs.continent}</span>` : '',
+    prefs.vibe ? `<span class="pill">Vibe: ${prefs.vibe}</span>` : '',
+    prefs.climate ? `<span class="pill">Climate: ${prefs.climate}</span>` : ''
+  ].join('');
+
+  // Score & filter
+  let scored = cities.map(c=>{
+    const s = randomScoreFromPrefs(c, prefs);
+    let hours = null;
+    if (origin){
+      const d = haversine(origin.lat, origin.lon, c.lat, c.lon);
+      hours = estimateFlightHours(d);
+    }
+    return {...c, score:s, hours};
+  });
+
+  // Filter by max hours if origin known
+  if (origin && prefs.maxHours){
+    scored = scored.filter(c=> !c.hours || c.hours <= prefs.maxHours + 0.5);
+  }
+  // If known destination set, bubble it to top
+  if (prefs.knownDest){
+    scored.sort((a,b)=>{
+      const amatch = a.city.toLowerCase().includes(prefs.knownDest.toLowerCase()) ? 1 : 0;
+      const bmatch = b.city.toLowerCase().includes(prefs.knownDest.toLowerCase()) ? 1 : 0;
+      if (amatch!==bmatch) return bmatch - amatch;
+      return b.score - a.score;
+    });
+  } else {
+    scored.sort((a,b)=> b.score - a.score);
+  }
+  const top10 = scored.slice(0,10);
+
+  const grid = document.getElementById('resultsGrid');
+  grid.innerHTML = top10.map(c=>{
+    const img = pickHeroImage(c);
+    const price = (200 + Math.round(Math.random()*1200)); // placeholder "from $X"
+    const stops = Math.random()>0.6 ? (Math.random()>0.5? '1 stop':'2 stops') : 'Nonstop';
+    const htxt = c.hours ? fmtHours(c.hours) : '—';
+    return `
+      <a class="card city-card" href="itinerary.html#${encodeURIComponent(c.city+'|'+c.country)}">
+        <img src="${img}" alt="${c.city}">
+        <div class="overlay"></div>
+        <div class="score">${c.score}% match</div>
+        <div class="meta">
+          <div class="title">${c.city}</div>
+          <div class="subtitle">${c.country} • ${c.continent}</div>
+          <div class="flex" style="margin-top:8px">
+            <span class="pill">~ ${htxt} from you</span>
+            <span class="pill">From $${price}</span>
+            <span class="pill">${stops}</span>
+            <span class="mini-logos">${airlineLogoStrip()}</span>
+          </div>
+        </div>
+      </a>
+    `;
+  }).join('');
+})();
+</script>
+</body>
+</html>
